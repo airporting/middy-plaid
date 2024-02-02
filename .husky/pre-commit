@@ -1,0 +1,26 @@
+#!/bin/sh
+# GENERATED FILE - Do not edit manually
+. "$(dirname "$0")/_/husky.sh"
+
+yarn prettier:write
+git add ./.editorconfig
+git add ./.eslintrc.yml
+git add ./.gitattributes
+git add ./.gitignore
+git add ./.husky/commit-msg
+git add ./.husky/post-checkout
+git add ./.husky/post-merge
+git add ./.husky/post-rebase
+git add ./.husky/post-receive
+git add ./.husky/post-update
+git add ./.husky/pre-commit
+git add ./.nvmrc
+git add ./.prettierignore
+git add ./.prettierrc.json
+git add ./.yarn/
+git add ./.yarnrc.yml
+git add ./commitlint.config.js
+git add ./jest.config.js
+git add ./README.md
+git add ./renovate.json
+yarn lint

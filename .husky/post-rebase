@@ -1,0 +1,5 @@
+#!/bin/sh
+# GENERATED FILE - Do not edit manually
+. "$(dirname "$0")/_/husky.sh"
+
+yarn install
