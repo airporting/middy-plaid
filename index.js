@@ -1,7 +1,11 @@
 import { Configuration, PlaidApi, PlaidEnvironments } from 'plaid';
 
-const allowedPlaidEnvironments = ['production', 'sandbox', 'development'];
-const allowedPlaidVersions = [
+export const allowedPlaidEnvironments = [
+  'production',
+  'sandbox',
+  'development',
+];
+export const allowedPlaidVersions = [
   '2020-09-14',
   '2019-05-29',
   '2018-05-22',
@@ -23,9 +27,13 @@ const plaidMiddleware = ({
       );
     }
 
-    const version = allowedPlaidVersions.includes(askedVersion)
-      ? askedVersion
-      : '2020-09-14';
+    let version = askedVersion;
+    if (!allowedPlaidVersions.includes(askedVersion)) {
+      version = allowedPlaidVersions[0];
+      console.warn(
+        `[middy-plaid] Warning: usage of not allowed version (provided: ${askedVersion}, allowed: ${allowedPlaidVersions.join(', ')})`
+      );
+    }
 
     const plaidConfig = new Configuration({
       basePath: PlaidEnvironments[environment],
