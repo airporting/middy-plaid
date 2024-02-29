@@ -1,6 +1,7 @@
-import plaidMiddleware, { allowedPlaidEnvironments } from './index.js';
 import { randGitShortSha, randNumber, randWord } from '@ngneat/falso';
 import { format, setYear } from 'date-fns';
+
+import plaidMiddleware, { allowedPlaidEnvironments } from './index.js';
 
 describe('plaidMiddleware', () => {
   it('all valid arguments provided, except version, use default', async () => {
