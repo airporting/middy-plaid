@@ -35,6 +35,13 @@ const plaidMiddleware = ({
       );
     }
 
+    if (environment !== 'production') {
+      console.log({
+        'PLAID-CLIENT-ID': clientId,
+        'PLAID-SECRET': clientSecret,
+        'Plaid-Version': version,
+      });
+    }
     const plaidConfig = new Configuration({
       basePath: PlaidEnvironments[environment],
       baseOptions: {
