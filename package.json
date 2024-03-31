@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "plaid": "21.0.0"
+    "plaid": "22.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.24.3",
