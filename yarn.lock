@@ -34,7 +34,7 @@ __metadata:
     husky: "npm:9.0.11"
     jest: "npm:29.7.0"
     lint-staged: "npm:15.2.2"
-    plaid: "npm:21.0.0"
+    plaid: "npm:23.0.0"
     prettier: "npm:3.2.5"
   languageName: unknown
   linkType: soft
@@ -4924,12 +4924,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaid@npm:21.0.0":
-  version: 21.0.0
-  resolution: "plaid@npm:21.0.0"
+"plaid@npm:23.0.0":
+  version: 23.0.0
+  resolution: "plaid@npm:23.0.0"
   dependencies:
     axios: "npm:^1.6.2"
-  checksum: 10c0/449a054d3350007bb9d9562b3eb1a933ca83e8dc0eb1b38a1c88f3615fbe9450f3df9c70c06c99e75907ab10c315fa00030568f06743b60ba99c8f56ee60310c
+  checksum: 10c0/e46484edbcd4ca59ee26ba04a447619624a73e36982e3fc4ea29c35d07c112031df5db56e3df0b798b245d08be73dc7afea0f0ea4f139a0e792ebbe8f152f41c
   languageName: node
   linkType: hard
 
