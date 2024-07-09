@@ -4,7 +4,6 @@
 
 yarn prettier:write
 git add ./.editorconfig
-git add ./.eslintrc.yml
 git add ./.gitattributes
 git add ./.gitignore
 git add ./.husky/commit-msg
@@ -20,6 +19,7 @@ git add ./.prettierrc.json
 git add ./.yarn/
 git add ./.yarnrc.yml
 git add ./commitlint.config.js
+git add ./eslint.config.js
 git add ./jest.config.js
 git add ./README.md
 git add ./renovate.json
